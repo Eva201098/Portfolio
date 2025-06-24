@@ -1,0 +1,327 @@
+#homebody ,#contact_body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(".sliki/withme.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
+#naslov{
+    font-family: "Lucida Handwriting",cursive ;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    float: left;
+    position: relative;
+    left: 13%;
+    top: 13px;
+    margin-top: 3px;
+    color: #f02070;
+    font-size: 30px;
+
+}
+
+nav{
+    background-color: black;
+    padding: 7px 0px;
+}
+nav ul{
+    word-spacing: 50px;
+    text-align:  center;
+    margin-left: 450px;
+}
+nav ul li {
+    display: inline-block;
+    background-color: black;
+
+}
+nav ul li a:hover{
+    color: deeppink;
+    transition: color 0.4s ease;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+    word-spacing: 20px;
+    font-size: 20px;
+}
+h1{
+    color: black;
+    font-size: 70px;
+    font-family: cursive;
+    padding: 0px;
+    margin: 0px;
+}
+footer {
+    background-color: rgba(41, 41, 41, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#home a{
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin: 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#home a.contact_me{
+    background-image: url(".sliki/contact_me_logo.png");
+    animation: pulse 2s infinite;
+
+}
+#home a.contact_me:hover{
+    transform: scale(1.1);
+}
+.home-content {
+    font-family: cursive;
+    color: black;
+    display: inline-block;
+}
+.home-content{
+    margin-left: 250px;
+    margin-top: 200px;
+}
+.home-content p{
+    padding-left: 50px;
+    margin: 0px;
+}
+
+
+
+#about_body,#travels_body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(".sliki/belapozadina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.aboot_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* or use center/space-around as needed */
+    align-items: flex-start; /* keeps top alignment */
+    flex-wrap: nowrap; /* prevents wrapping into multiple rows */
+    gap: 20px; /* space between the divs */
+    padding: 20px;
+}
+.aboot_section div{
+    display: inline-block;
+    height: 500px;
+    width: 310px;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 50px 25px;
+    background: rgba(41, 41, 41, 0.5);
+    position: static;
+}
+.aboot_section div:nth-child(1) {
+    margin-top: 50px;
+    float: left;
+    position: static;
+}
+.aboot_section h3{
+    text-align: center;
+    font-family: "Lucida Handwriting",cursive ;
+}
+.aboot_section h4{
+    color: #f02070;
+    text-align: center;
+}
+.aboot_section div p{
+    text-align: center;
+}
+.aboot_section div:nth-child(2) p{
+    text-align: center;
+    color: black;
+    margin: 0px;
+    padding:0px;
+}
+.aboot_section div:nth-child(2) h4{
+    text-align: center;
+    color: #f02070;
+    margin: 0px;
+    padding:0px;
+}
+.aboot_section img {
+    padding: 10px;
+    margin: 10px;
+}
+.aboot_section li span{
+    color: #f02070;
+}
+.aboot_section div:nth-child(4) p{
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: center;
+}
+.aboot_section div:nth-child(4) img{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.travels_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* or use center/space-around as needed */
+    align-items: flex-start; /* keeps top alignment */
+    flex-wrap: nowrap; /* prevents wrapping into multiple rows */
+    gap: 20px; /* space between the divs */
+    padding: 20px;
+}
+.travels_section div{
+    border: 1px solid black;
+    display: inline-block;
+    height: 560px;
+    width: 300px;
+    background-color:rgba(41, 41, 41, 0.5) ;
+    margin: 30px 90px;
+
+}
+.card {
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+.travels_section p{
+    text-align: center;
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+
+.forms {
+    border-radius: 2%;
+    height: 500px;
+    width: 400px;
+    background: pink ;
+    padding: 15px;
+    display: inline-block;
+    margin: 60px 160px;
+
+}
+.forms h2 {
+    font-family: "Lucida Handwriting",cursive ;
+    text-align: center;
+    color: white;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact-section,.home-content ,.aboot_section,.travels_section {
+    animation: slideIn 1s ease forwards;
+}
+.form-group input,
+.form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffe6e6;
+    font-family: sans-serif;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    height: 40px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f02070;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+.form-group button:hover {
+    transform: scale(1.05);
+    background: deeppink;
+}
+
+
+.social-icons {
+    text-align: center;
+    margin:0px;
+
+}
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    background-size: cover;
+    background: #f02070;
+    border-radius: 50%;
+}
+.social-icon {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    transform: scale(1.3);
+    color: white; /* или боја по желба */
+}
+
+.social-icons a:hover{
+    transform: scale(1.1);
+}
+.social-icons a:hover{
+    transform: scale(1.1);
+}
